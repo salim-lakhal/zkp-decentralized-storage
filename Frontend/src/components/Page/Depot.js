@@ -13,7 +13,7 @@ const IPFS = create();
 const Depot = () => {
   const [fileUploaded, setFileUploaded] = useState(null);
   const [ipfsLink, setIpfsLink] = useState(null);
-  const [jwtToken, setJwtToken] = useState('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI2NWZkMmY4ZS0xNmJiLTQ3NmQtOTIzNy1jYjE3ZjE2NWY1NGQiLCJlbWFpbCI6InNhbGltLmxha2hhbEB0ZWxlY29tLXN1ZHBhcmlzLmV1IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBpbl9wb2xpY3kiOnsicmVnaW9ucyI6W3siaWQiOiJGUkExIiwiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjF9LHsiaWQiOiJOWUMxIiwiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjF9XSwidmVyc2lvbiI6MX0sIm1mYV9lbmFibGVkIjpmYWxzZSwic3RhdHVzIjoiQUNUSVZFIn0sImF1dGhlbnRpY2F0aW9uVHlwZSI6InNjb3BlZEtleSIsInNjb3BlZEtleUtleSI6IjQyZmVlNWQ0NWZmNTMzNDUxYzQwIiwic2NvcGVkS2V5U2VjcmV0IjoiYWQ1ZjI0MDJhZGQwYzNmODRhOGNiM2FlZTkxYTI2MzQ1NGNhZTk3NmEzNzhjM2NmMWU4MGNiNWFjOTlhZjU1NiIsImlhdCI6MTcxNDkwMzIzMn0.XBJenmYfjKsTVMW6GJ1iEh3L3OTE7_pGv29cAJGmIeU');
+  const [jwtToken, setJwtToken] = useState('REDACTED_PINATA_JWT');
 
   const pinFileToIPFS = async () => {
     const formData = new FormData();
