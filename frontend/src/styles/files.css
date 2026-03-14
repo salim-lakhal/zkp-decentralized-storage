@@ -1,0 +1,161 @@
+.files-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.files-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.files-search input {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  width: 260px;
+  transition: border-color var(--transition);
+}
+
+.files-search input:focus {
+  border-color: var(--accent);
+}
+
+.files-search input::placeholder {
+  color: var(--text-muted);
+}
+
+.files-view-toggle {
+  display: flex;
+  gap: 4px;
+}
+
+.view-btn {
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  transition: all var(--transition);
+}
+
+.view-btn:first-child {
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+
+.view-btn:last-child {
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.view-btn.active {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.files-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.files-table th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.files-table th:first-child {
+  border-radius: var(--radius-sm) 0 0 0;
+}
+
+.files-table th:last-child {
+  border-radius: 0 var(--radius-sm) 0 0;
+}
+
+.files-table td {
+  padding: 14px 16px;
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+.files-table tr:hover td {
+  background: var(--bg-card);
+}
+
+.file-name-cell {
+  font-weight: 500;
+}
+
+.file-cid {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.file-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.files-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.file-grid-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  transition: all var(--transition);
+}
+
+.file-grid-card:hover {
+  border-color: var(--border-hover);
+}
+
+.file-grid-card h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.file-grid-card .file-cid {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.file-grid-card .file-actions {
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .files-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .files-search input {
+    width: 100%;
+  }
+
+  .files-table {
+    display: block;
+    overflow-x: auto;
+  }
+}

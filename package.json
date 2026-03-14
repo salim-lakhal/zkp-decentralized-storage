@@ -1,6 +1,30 @@
 {
+  "name": "zkp-decentralized-storage",
+  "version": "1.0.0",
+  "description": "Decentralized file storage with IPFS, Zero-Knowledge Proof identity verification, and NFT-based access control",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:contracts": "hardhat test",
+    "test:frontend": "cd frontend && npm test -- --watchAll=false",
+    "test:all": "npm run test:contracts && npm run test:frontend",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "node": "hardhat node",
+    "frontend:start": "cd frontend && npm start",
+    "frontend:build": "cd frontend && npm run build",
+    "backend:start": "cd backend && node server.js",
+    "lint": "hardhat check",
+    "clean": "hardhat clean"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
   "dependencies": {
-    "react-router-dom": "^6.22.1",
-    "xrpl": "^3.0.0"
+    "@openzeppelin/contracts": "^5.0.2",
+    "circomlib": "^2.0.5",
+    "dotenv": "^17.3.1",
+    "snarkjs": "^0.7.3"
   }
 }

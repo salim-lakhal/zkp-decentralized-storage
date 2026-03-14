@@ -1,2 +1,14 @@
-node_modules
-build
+node_modules/
+build/
+dist/
+.env
+.env.*
+*.env
+coverage/
+artifacts/
+cache/
+typechain-types/
+frontend/build/
+backend/node_modules/
+*.log
+.DS_Store
