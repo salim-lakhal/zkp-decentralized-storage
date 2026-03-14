@@ -10,6 +10,11 @@ A decentralized file storage platform that combines **IPFS** for content-address
 
 Files are encrypted client-side before uploading to IPFS. Access is controlled by a Merkle tree of authorized users — anyone in the tree can generate a ZKP (Groth16) proving membership **without revealing their identity**. The proof is verified on-chain, and only valid provers can retrieve the decryption key.
 
+## Demo
+
+[![Demo](assets/demo.gif)](https://github.com/salim-lakhal/zkp-decentralized-storage/releases/download/v1.0/demo.mp4)
+> *Click to watch full quality video*
+
 ## Architecture
 
 ```mermaid

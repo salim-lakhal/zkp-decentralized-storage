@@ -2,8 +2,9 @@ node_modules/
 build/
 dist/
 .env
-.env.*
-*.env
+.env.local
+.env.production
+.env.development
 coverage/
 artifacts/
 cache/
@@ -12,3 +13,5 @@ frontend/build/
 backend/node_modules/
 *.log
 .DS_Store
+videos/
+e2e/
