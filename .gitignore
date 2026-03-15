@@ -15,3 +15,5 @@ backend/node_modules/
 .DS_Store
 videos/
 e2e/
+
+.claude
